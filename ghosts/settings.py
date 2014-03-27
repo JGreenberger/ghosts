@@ -20,9 +20,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = 'gjq+gm&u#^u53pw)mvj@48sm=nfh-6+r%j(ohnk&2bn+su(d^r'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-TEMPLATE_DEBUG = True
+TEMPLATE_DEBUG = DEBUG
 
 ALLOWED_HOSTS = []
 
@@ -59,9 +59,9 @@ WSGI_APPLICATION = 'ghosts.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'jeremy',
-	'USER': 'root',
-	'PASSWORD':'',
+        'NAME': 'GhostsDB',
+	'USER': 'greenbej',
+	'PASSWORD':'@ccess2SQL',
 	'HOST':'localhost'
 	
     }
@@ -84,3 +84,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/dev/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = '/var/www/calliope.tcl.sc.edu/ghosts_database/static/'
